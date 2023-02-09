@@ -82,7 +82,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 >You can view the final page 
-<a href="https://yosefgeda.github.io/My-Portfolio/">HERE</a>
+<a href="https://yosefgeda.github.io/ethio-arts-event/">HERE</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,7 +91,7 @@
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Click <a href="https://yosefgeda.github.io/My-Portfolio/">HERE</a> to view the page.
+> Click <a href="https://yosefgeda.github.io/ethio-arts-event/">HERE</a> to view the page.
  
 
 
@@ -107,8 +107,8 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder, access the directory and run the html file: 
-To clone: git clone git@github.com:Yosefgeda/My-portfolio.git
-to change to directory: cd My-portfolio
+To clone: git clone git@github.com:Yosefgeda/ethio-arts-event.git
+to change to directory: cd ethio-arts-event
 Inside you will find the html file.
 
 
@@ -158,9 +158,6 @@ You can view the Loom video of the page
 - Twitter: [@yosefgeda](https://twitter.com/yosegeda)
 - LinkedIn: [yosefgeda](https://linkedin.com/in/yosefgeda)
 
- **Author2**
-- GitHub: [github](https://github.com/alexiscyber14)
-
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -190,7 +187,7 @@ If you like this project follow and give thumbs up on likedin
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to my coding partener Precious Betine.
+I would like to thank to [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

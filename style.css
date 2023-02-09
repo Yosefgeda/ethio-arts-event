@@ -340,13 +340,12 @@
 }
 
 .img1-hidden {
-  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 110%;
-  color: #ec5242;
+  color: white;
   font-weight: 900;
 }
 
@@ -380,7 +379,7 @@
   color: #272a31;
 }
 
-/* .......... Foorter ......... */
+/* .......... Footer ......... */
 
 .top-footer {
   display: flex;
@@ -456,7 +455,7 @@
   display: none;
 }
 
-/* ....... Desktop Version ........ */
+/* .................... Desktop Version .................. */
 
 @media (min-width: 768px) {
   .nav-bar {
@@ -526,15 +525,11 @@
     text-decoration: underline;
   }
 
-  .hiddenPt {
-    display: flex;
-  }
-
   .see-more {
     display: none;
   }
 
-  .parteners-desk {
+  .top-footer {
     display: block;
   }
 
@@ -584,17 +579,33 @@
     flex-direction: row;
   }
 
-  .top-footer {
-    display: none;
-  }
-
-  .bottom-footer {
+ 
+  .bottom-footer-desk {
     margin-top: 0;
-    background-color: #272a31;
+    
     padding-top: 5%;
   }
 
-  .bottom-footer p {
+  .bottom-footer-desk p {
+    color: #272a31;
+  }
+
+  .about-footer-desk {
+    display: none;
+  }
+
+  .about-bottom-footer {
+    background-color: #272a31;
+    margin-top: 0;
+    padding-top: 5%;
+  }
+
+  .about-bottom-footer p{
     color: white;
   }
+
+  .about-bottom-footer img {
+    filter: invert(100%);
+  }
+ 
 }
