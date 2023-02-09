@@ -58,127 +58,70 @@ const featureData = {
 
 const mainSection = document.querySelector('.main-section');
 
-const featureContainer = document.createElement('div');
-featureContainer.className = 'feature-container';
-mainSection.appendChild(featureContainer);
+mainSection.innerHTML = `
+      <div class="feature-container">
+        <div class="feature-head">
+          <h3 class="feat-head">Featured Artists</h3>
+          <span class="underline"></span>
+        </div>
+        <div class="feature-container-cards">
+        </div>
+      </div>`;
 
-const featureHead = document.createElement('div');
-featureHead.className = 'feature-head';
-featureContainer.appendChild(featureHead);
-
-const featureTitle = document.createElement('h3');
-featureTitle.textContent = 'Featured Artists';
-featureTitle.className = 'feat-head';
-featureHead.appendChild(featureTitle);
-
-const underLine = document.createElement('span');
-underLine.className = 'underline';
-featureHead.appendChild(underLine);
-
-const featureContainerCards = document.createElement('div');
-featureContainerCards.className = 'feature-container-cards';
-featureContainer.appendChild(featureContainerCards);
+const featureContainerCards = document.querySelector('.main-section .feature-container-cards');
 
 function featureCards(imgSrc, nameOfArtist, ach, artistParagraph) {
-  const imgDescription = document.createElement('div');
-  imgDescription.classList = 'img-description';
-  featureContainerCards.appendChild(imgDescription);
-
-  const imgContainer = document.createElement('div');
-  imgContainer.className = 'img-container';
-  imgDescription.appendChild(imgContainer);
-
-  const featureImg = document.createElement('img');
-  featureImg.className = 'feature-img';
-  featureImg.src = imgSrc;
-  imgContainer.appendChild(featureImg);
-
-  const featureTexts = document.createElement('div');
-  featureTexts.className = 'feature-texts';
-  imgDescription.appendChild(featureTexts);
-
-  const artistName = document.createElement('h4');
-  artistName.textContent = nameOfArtist;
-  artistName.className = 'artist-name';
-  featureTexts.appendChild(artistName);
-
-  const artistAchivement = document.createElement('p');
-  artistAchivement.className = 'artist-achivement';
-  artistAchivement.textContent = ach;
-  featureTexts.appendChild(artistAchivement);
-
-  const separator = document.createElement('span');
-  separator.className = 'feature-separator';
-  featureTexts.appendChild(separator);
-
-  const featurePara = document.createElement('p');
-  featurePara.className = 'feature-para';
-  featurePara.textContent = artistParagraph;
-  featureTexts.appendChild(featurePara);
+  featureContainerCards.innerHTML
+          += `<div class="img-description">
+            <div class="img-container">
+              <img class="feature-img" src=${imgSrc}>
+            </div>
+              <div class="feature-texts">
+                <h4 class="artist-name">${nameOfArtist}</h4>
+                <p class="artist-achivement">${ach}</p>
+                <span class="feature-separator"></span>
+                <p class="feature-para">${artistParagraph}</p>
+              </div>
+          </div>`;
 }
-
-featureCards(featureData.zerihun.img, featureData.zerihun.artistName,
-  featureData.zerihun.achivement, featureData.zerihun.description);
-featureCards(featureData.kebedech.img, featureData.kebedech.artistName,
-  featureData.kebedech.achivement, featureData.kebedech.description);
 
 function featureCardsHidden(imgSrc, nameOfArtist, ach, artistParagraph) {
-  const imgDescriptionHidden = document.createElement('div');
-  imgDescriptionHidden.className = 'img-description img-desc-hidden';
-  featureContainerCards.appendChild(imgDescriptionHidden);
-
-  const imgContainer = document.createElement('div');
-  imgContainer.className = 'img-container';
-  imgDescriptionHidden.appendChild(imgContainer);
-
-  const featureImg = document.createElement('img');
-  featureImg.className = 'feature-img';
-  featureImg.src = imgSrc;
-  imgContainer.appendChild(featureImg);
-
-  const featureTexts = document.createElement('div');
-  featureTexts.className = 'feature-texts';
-  imgDescriptionHidden.appendChild(featureTexts);
-
-  const artistName = document.createElement('h4');
-  artistName.textContent = nameOfArtist;
-  artistName.className = 'artist-name';
-  featureTexts.appendChild(artistName);
-
-  const artistAchivement = document.createElement('p');
-  artistAchivement.className = 'artist-achivement';
-  artistAchivement.textContent = ach;
-  featureTexts.appendChild(artistAchivement);
-
-  const separator = document.createElement('span');
-  separator.className = 'feature-separator';
-  featureTexts.appendChild(separator);
-
-  const featurePara = document.createElement('p');
-  featurePara.className = 'feature-para';
-  featurePara.textContent = artistParagraph;
-  featureTexts.appendChild(featurePara);
+  featureContainerCards.innerHTML
+          += `<div class="img-description img-desc-hidden">
+            <div class="img-container">
+              <img class="feature-img" src=${imgSrc}>
+            </div>
+              <div class="feature-texts">
+                <h4 class="artist-name">${nameOfArtist}</h4>
+                <p class="artist-achivement">${ach}</p>
+                <span class="feature-separator"></span>
+                <p class="feature-para">${artistParagraph}</p>
+              </div>
+          </div>`;
 }
 
-const seeMore = document.createElement('div');
-seeMore.className = 'see-more';
-featureContainer.appendChild(seeMore);
+Object.keys(featureData).forEach((speakerdata, index) => {
+  if (index === 2) {
+    const featureContainer = document.querySelector('.main-section .feature-container');
+    const seeMore = document.createElement('div');
+    seeMore.className = 'see-more';
+    featureContainer.appendChild(seeMore);
 
-const moreBtn = document.createElement('h4');
-moreBtn.className = 'more-btn';
-moreBtn.textContent = 'MORE';
-seeMore.appendChild(moreBtn);
+    const moreBtn = document.createElement('h4');
+    moreBtn.className = 'more-btn';
+    moreBtn.textContent = 'MORE';
+    seeMore.appendChild(moreBtn);
 
-const seeMoreImg = document.createElement('img');
-seeMoreImg.src = 'img/arrow_down.png';
-seeMoreImg.className = 'see-more-img';
-seeMore.appendChild(seeMoreImg);
-
-featureCardsHidden(featureData.wosene.img, featureData.wosene.artistName,
-  featureData.wosene.achivement, featureData.wosene.description);
-featureCardsHidden(featureData.martha.img, featureData.martha.artistName,
-  featureData.martha.achivement, featureData.martha.description);
-featureCardsHidden(featureData.dege.img, featureData.dege.artistName,
-  featureData.dege.achivement, featureData.dege.description);
-featureCardsHidden(featureData.lemma.img, featureData.lemma.artistName,
-  featureData.lemma.achivement, featureData.lemma.description);
+    const seeMoreImg = document.createElement('img');
+    seeMoreImg.src = 'img/arrow_down.png';
+    seeMoreImg.className = 'see-more-img';
+    seeMore.appendChild(seeMoreImg);
+  }
+  if (index < 2) {
+    featureCards(featureData[speakerdata].img, featureData[speakerdata].artistName,
+      featureData[speakerdata].achivement, featureData[speakerdata].description);
+  } else {
+    featureCardsHidden(featureData[speakerdata].img, featureData[speakerdata].artistName,
+      featureData[speakerdata].achivement, featureData[speakerdata].description);
+  }
+});

@@ -85,7 +85,7 @@
 <a href="https://yosefgeda.github.io/ethio-arts-event/">HERE</a>
 
 >Or watch a Loom video of the page 
-<a href="https://www.loom.com/share/7476056d8f434b2ca7e7ba9232fe9265">HERE</a>
+<a href="https://www.loom.com/share/8744d6ef699b47ab83a3f024676921a2">HERE</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,6 +171,9 @@ You can view the Loom video of the page
 
 - [ ] **[More_section_will_be_included]**
 - [ ] **[The_coming_features_will_include_previous_works_done]**
+- [ ] **[The_see_more_and_see_less_button_will_be_implemented]**
+- [ ] **[Implement_additional_pages_like_the_tickets_page_and_the_schedule_page]**
+
 
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
@@ -187,10 +190,11 @@ If you like this project follow and give thumbs up on likedin
 
 
 <!-- ACKNOWLEDGEMENTS -->
+## Acknowledgments
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank to [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+I would like to thank to [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). The original designr of the web page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
