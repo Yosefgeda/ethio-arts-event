@@ -556,10 +556,6 @@
     gap: 20px;
   }
 
-  .bottom-footer-desk {
-    display: flex;
-  }
-
   /* .................. About ..................... */
   .about-intro {
     margin-top: 5%;
@@ -579,10 +575,9 @@
     flex-direction: row;
   }
 
- 
   .bottom-footer-desk {
+    display: flex;
     margin-top: 0;
-    
     padding-top: 5%;
   }
 
@@ -600,12 +595,11 @@
     padding-top: 5%;
   }
 
-  .about-bottom-footer p{
+  .about-bottom-footer p {
     color: white;
   }
 
   .about-bottom-footer img {
     filter: invert(100%);
   }
- 
 }
