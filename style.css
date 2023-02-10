@@ -11,6 +11,7 @@
 }
 
 .hamburger {
+  display: block;
   padding: 5% 5%;
   padding-bottom: 7%;
   color: #272a31;

@@ -58,7 +58,7 @@ const featureData = {
 
 const mainSection = document.querySelector('.main-section');
 
-mainSection.innerHTML = `
+mainSection.innerHTML += `
       <div class="feature-container">
         <div class="feature-head">
           <h3 class="feat-head">Featured Artists</h3>
