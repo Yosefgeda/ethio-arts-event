@@ -1,6 +1,7 @@
 # ethio-arts-event
 <a name="readme-top"></a>
 
+![Untitled](https://user-images.githubusercontent.com/100337086/232691641-8adb202f-f1ef-4718-8439-cc0aed6ba520.jpg)
 
 
 <div align="center">
@@ -38,7 +39,7 @@
 # 📖 [Ethio-art_by-LDE] <a name="about-project"></a>
 
 
-**[# 📖 [Ethio-art_by-LDE]  Project mainly focusing on catering the Ethio-arts event organized by Last Day Events(LDE).  
+Project mainly focusing on catering the Ethio-arts event organized by Last Day Events(LDE).  
 
 ## 🛠 Built With <a name="built-with"></a>
 
